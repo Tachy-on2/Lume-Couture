@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Lumé Couture: Home</title>
+  </head>
+  <body>
+    <header>
+      <!-- HAMBURGER ICON -->
+
+      <img src="assets/imgs/Lume Couture Black.png" alt="Lumé Couture Logo" />
+      <img
+        class="hidden"
+        src="assets/imgs/Lume couture.png"
+        alt="Lumé Couture Logo"
+      />
+      <nav>
+        <ul>
+          <li class="active men-toggle">
+            <a href="index.html" onclick="toggleMenMenu()">MEN</a>
+          </li>
+          <li><a href="#" onclick="toggleWomenMenu()">WOMEN</a></li>
+          <li>
+            <a href="#" onclick="toggleElleMenu()">ELLE'S FASHION ROOM</a>
+          </li>
+          <input type="search" placeholder="SEARCH" />
+          <li><a href="#">JOSEPH</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="shopping_bag.html">SHOPPING BAG</a></li>
+        </ul>
+      </nav>
+      <aside class="men-menu">
+        <ul>
+          <li><a href="#">Trousers</a></li>
+          <li><a href="#">Shirts and Vests</a></li>
+          <li><a href="#">Sweaters</a></li>
+          <li><a href="#">Outerwear</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Footwear</a></li>
+          <li><a href="#">Bags</a></li>
+          <li><a href="#">Jewelry</a></li>
+          <li><a href="#">Watches</a></li>
+          <li><a href="#">Belts</a></li>
+          <li><a href="#">Hats</a></li>
+        </ul>
+      </aside>
+    </header>
+
+    <section class="displays">
+      <div class="display-01">
+        <div class="display-01-left">
+          <img
+            src="assets/imgs/Men Clothing/6ad13de5-690f-4756-b317-181e3bc2af53.webp"
+            alt=""
+          />
+          <div class="display-01-left-info">
+            <span class="add-to-cart"><a href="#">+</a></span>
+            <span class="product-info">
+              <a href="#" onclick="toggleFavorite(this)"
+                ><img src="assets/imgs/Icons/favorite.png" alt=""
+              /></a>
+              <p>Restez dans la boucle du coton douillet.</p>
+              <p>Lumé Couture v1.0</p>
+              <p>
+                Crafted from 100% premium cotton, this piece combines breathable
+                comfort with timeless sophistication. Designed with minimalist
+                lines and a versatile fit, it’s perfect for everyday Élégance —
+                keeping you cool, stylish, and confident in every setting.
+              </p>
+            </span>
+            <!-- <button>Shop Now</button> -->
+          </div>
+        </div>
+        <div class="display-01-right">
+          <img
+            src="assets/imgs/Men Clothing/cb14580a-ed29-49b7-92a7-7ad0dae5af30.webp"
+            alt=""
+          />
+          <div class="display-01-right-info">
+            <p>Restez dans la boucle du coton douillet.</p>
+            <p>Lumé Couture v2.0</p>
+            <!-- <button>Shop Now</button> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <div class="media-description">
+      <h4>Our Styles</h4>
+      <p>
+        At Lumé Couture, our designs blend minimalist elegance with bold
+        statement pieces. From tailored classics to contemporary essentials,
+        every style is crafted to move effortlessly between work, leisure, and
+        special occasions — giving you fashion that’s both timeless and
+        versatile.
+      </p>
+    </div>
+
+    <hr />
+
+    <div class="display-01">
+      <div class="display-01-left">
+        <img
+          src="assets/imgs/Men Clothing/c05b4979-a235-4644-b5cb-0c3c2bc9c213.webp"
+          alt=""
+        />
+        <div class="display-01-left-info">
+          <span class="add-to-cart"><a href="#">+</a></span>
+          <span class="product-info">
+            <a onclick="toggleFavorite(this)" href="#"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <p>Cozy in the Wool</p>
+            <p>Lumé Couture v1.0</p>
+            <p>
+              Soft to the touch and effortlessly refined, our woollen shirt is
+              crafted from premium lightweight wool for year-round comfort.
+              Designed with clean tailoring and a modern silhouette, it balances
+              warmth with breathability, making it perfect for both layering and
+              standalone wear.
+            </p>
+          </span>
+          <!-- <button>Shop Now</button> -->
+        </div>
+      </div>
+      <div class="display-01-right">
+        <img
+          src="assets/imgs/Men Clothing/cfe4f579-7c4e-40e3-acb9-35e134a18bf6.webp"
+          alt=""
+        />
+        <div class="display-01-right-info">
+          <p>Embracing the warmth</p>
+          <p>Lumé Couture v2.0</p>
+          <button>Shop Now</button>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- <section>
+      <div class="category">
+        <div class="knitted-wear">
+          <img
+            src="/assets/imgs/Men Clothing/70880fcd3dc204e32e6d43fd18d854c1_1733844335096.webp"
+            alt=""
+          />
+          <h4>Knitted Wear</h4>
+        </div>
+
+        <div class="trousers">
+          <img
+            src="/assets/imgs/Men Clothing/bc596aa9-6cf6-487d-b403-1ecf11379801.webp"
+            alt=""
+          />
+          <h4>Trousers</h4>
+        </div>
+
+        <div class="shirt">
+          <img
+            src="/assets/imgs/Men Clothing/fb9cac40-aa92-46d3-bf0c-b5c88b7a7f74.webp"
+            alt=""
+          />
+          <h4>Shirts</h4>
+        </div>
+
+        <div class="outerwear">
+          <img
+            src="/assets/imgs/Men Clothing/f702bcdf-cc04-40f0-89ce-86f6eb92ea11.webp"
+            alt=""
+          />
+          <h4>Outerwear</h4>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="first-container">
+      <div class="main-gallery">
+        <img src="assets/imgs/Men Clothing/04092332707-p.jpg" alt="" />
+        <img src="assets/imgs/Men Clothing/07545340251-a4.jpg" alt="" />
+        <img src="assets/imgs/Men Clothing/07545340700-p.jpg" alt="" />
+      </div>
+
+      <div class="product-gallery">
+        <div class="product-1">
+          <a href="shop.html"
+            ><img src="assets/imgs/Men Clothing/07545340700-e1.jpg" alt=""
+          /></a>
+
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Cocoa Classic">Cocoa Classic</p>
+              <p data-product-price="$70.00">$70.00</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-2">
+          <a href="shop.html"
+            ><img src="assets/imgs/Men Clothing/07545340251-e1.jpg" alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Ivory Classic">Ivory Classic</p>
+              <p data-product-price="$185.00">$185.00</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-3">
+          <a href="shop.html"
+            ><img src="assets/imgs/Men Clothing/03284325707-e1.jpg" alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Mocha Tone">Mocha Tone</p>
+              <p data-product-price="$243.00">$243.00</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-4">
+          <a href="shop.html"
+            ><img src="assets/imgs/Men Clothing/00774350407-e1.jpg" alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Pacific Wash">Pacific Wash</p>
+              <p data-product-price="$145.00">$145.00</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-5">
+          <a href="shop.html"
+            ><img src="assets/imgs/Men Clothing/00774350814-e1.jpg" alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Ink Wash Jeans">Ink Wash Jeans</p>
+              <p data-product-price="$99.00">$99.00</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-6">
+          <a href="shop.html"
+            ><img src="assets/imgs/Men Clothing/03920468700-ult28.jpg" alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Expresso Edge">Expresso Edge</p>
+              <p data-product-price="$132.00">$132.00</p>
+            </div>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="second-container">
+      <div class="sports-gallery">
+        <img src="assets/imgs/Men Clothing/Sports/T9643920540-p.jpg" alt="" />
+        <a href="#">
+          <img
+            src="assets/imgs/Men Clothing/Sports/Screenshot 2025-08-22 104953.png"
+            alt=""
+        /></a>
+        <img
+          src="assets/imgs/Men Clothing/Sports/a4db5e45df784832bbd55c8bdbd59a72-goods.webp"
+          alt=""
+        />
+      </div>
+      <div class="product-gallery">
+        <div class="product-1">
+          <a href="shop.html"
+            ><img
+              src="assets/imgs/Men Clothing/Sports/05868302700-e1.jpg"
+              alt=""
+          /></a>
+
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Cocoa Classic">Cocoa Classic</p>
+              <p data-product-price="$80.00">$80.00</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-2">
+          <a href="shop.html"
+            ><img
+              src="assets/imgs/Men Clothing/Sports/04387304251-e1.jpg"
+              alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Ivory Classic">Ivory Classic</p>
+              <p data-product-price="$99.00">$99.00</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-3">
+          <a href="shop.html"
+            ><img
+              src="assets/imgs/Men Clothing/Sports/01943405401-e1.jpg"
+              alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Mocha Tone">Mocha Tone</p>
+              <p data-product-price="$120.00">$120.00</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-4">
+          <a href="shop.html"
+            ><img
+              src="assets/imgs/Men Clothing/Sports/training socks.jpg"
+              alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Training Socks">Training Socks</p>
+              <p data-product-price="$14.99">$14.99</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-5">
+          <a href="shop.html"
+            ><img
+              src="assets/imgs/Men Clothing/Sports/technical trousers.jpg"
+              alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Technical Trousers">Technical Trousers</p>
+              <p data-product-price="$45.99">$45.99</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-6">
+          <a href="shop.html"
+            ><img
+              src="assets/imgs/Men Clothing/Sports/relaxed fit shirt.jpg"
+              alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Relaxed Fit Shirt">Relaxed Fit Shirt</p>
+              <p data-product-price="$79.99">$79.99</p>
+            </div>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="newsletter">
+        <div></div>
+        <!-- <img src="assets/imgs/Lume couture.png" alt="" /> -->
+        <div class="newsletter-content">
+          <h4>Subscribe to our Newsletter</h4>
+          <p>Stay updated on the latest arrivals and exclusive offers.</p>
+          <form action="#">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="socials">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">Pinterest</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">YouTube</a>
+        <a href="#">TikTok</a>
+        <a href="#">Snapchat</a>
+      </div>
+
+      <table>
+        <tr>
+          <th>HELP</th>
+          <th>FOLLOW</th>
+          <th>COMPANY</th>
+          <th>POLICIES</th>
+        </tr>
+        <tr>
+          <td><a href="#">Customer Support</a></td>
+          <td><a href="#">Instagram</a></td>
+          <td><a href="#">About Us</a></td>
+          <td><a href="#">Privacy Policy</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">FAQ</a></td>
+          <td><a href="#">Twitter</a></td>
+          <td><a href="#">Careers</a></td>
+          <td><a href="#">Terms of Service</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Shipping Information</a></td>
+          <td><a href="#">LinkedIn</a></td>
+          <td><a href="#">Press</a></td>
+          <td><a href="#">Cookie Policy</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Gift Cards</a></td>
+          <td><a href="#">YouTube</a></td>
+          <td><a href="#">Sustainability</a></td>
+          <td><a href="#">Accessibility</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Site Map</a></td>
+          <td><a href="#">TikTok</a></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><a href="#">Pinterest</a></td>
+        </tr>
+      </table>
+      <div class="copyright">
+        <p>&copy; 2023 Lumé Couture. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

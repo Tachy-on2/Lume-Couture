@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/shop.css" />
+    <title>Lume Couture: Shop</title>
+  </head>
+  <body>
+    <header>
+      <!-- HAMBURGER ICON -->
+
+      <img src="assets/imgs/Lume Couture Black.png" alt="Lumé Couture Logo" />
+      <img
+        class="hidden"
+        src="assets/imgs/Lume couture.png"
+        alt="Lumé Couture Logo"
+      />
+      <nav>
+        <ul>
+          <li class="active men-toggle">
+            <a href="index.html" onclick="toggleMenMenu()">MEN</a>
+          </li>
+          <li><a href="#" onclick="toggleWomenMenu()">WOMEN</a></li>
+          <li>
+            <a href="#" onclick="toggleElleMenu()">ELLE'S FASHION ROOM</a>
+          </li>
+          <input type="search" placeholder="SEARCH" />
+          <li><a href="#">JOSEPH</a></li>
+          <li><a href="#">SHOP</a></li>
+          <li><a href="shopping_bag.html">SHOPPING BAG</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="product-container">
+      <div class="product-item" id="selected-product">
+        <!-- Product details will be displayed here -->
+      </div>
+      <div class="similar-products">
+        <div class="similar-product-item">
+          <img src="assets/imgs/Men Clothing/00774350814-e1.jpg" alt="" />
+          <div class="similar-product-info">
+            <p>Jeans</p>
+            <p>$49.99</p>
+          </div>
+        </div>
+
+        <div class="similar-product-item">
+          <img
+            src="assets/imgs/Men Clothing/5b84b92c-8433-4e8a-bf5c-4235327c4144.webp"
+            alt="Similar Product Name"
+          />
+          <div class="similar-product-info">
+            <p>Jackets</p>
+            <p>$49.99</p>
+          </div>
+        </div>
+        <div class="similar-product-item">
+          <img
+            src="assets/imgs/Men Clothing/c05b4979-a235-4644-b5cb-0c3c2bc9c213.webp"
+            alt="Similar Product Name"
+          />
+          <div class="similar-product-info">
+            <p>Woollen <br>Jackets</p>
+            <p>$49.99</p>
+          </div>
+        </div>
+        <div class="similar-product-item">
+          <img
+            src="assets/imgs/Men Clothing/04695208818-e1.jpg"
+            alt="Similar Product Name"
+          />
+          <div class="similar-product-info">
+            <p>Rain <br>Jackets</p>
+            <p>$49.99</p>
+          </div>
+        </div>
+        <div class="similar-product-item">
+          <img
+            src="assets/imgs/Men Clothing/00774350800-e1.jpg"
+            alt="Similar Product Name"
+          />
+          <div class="similar-product-info">
+            <p>Black <br>Trousers</p>
+            <p>$49.99</p>
+          </div>
+        </div>
+        <div class="similar-product-item">
+          <img src="assets/imgs/Men Clothing/00526310540-e1.jpg" alt="" />
+          <div class="similar-product-info">
+            <p>Sweater <br> Vests</p>
+            <p>$49.99</p>
+          </div>
+        </div>
+        <div class="similar-product-item">
+          <img
+            src="assets/imgs/Men Clothing/00347870507-e1.jpg"
+            alt="Similar Product Name"
+          />
+          <div class="similar-product-info">
+            <p>Joggers</p>
+            <p>$49.99</p>
+          </div>
+        </div>
+        <div class="similar-product-item">
+          <img
+            src="assets/imgs/Men Clothing/94dbab67-23c1-4a9f-8370-8b14f0acf2f5.webp"
+            alt=""
+          />
+          <div class="similar-product-info">
+            <p>Shirts</p>
+            <p>$49.99</p>
+          </div>
+        </div>
+        <div class="similar-product-item">
+          <img
+            src="assets/imgs/Men Clothing/00774350814-e1.jpg"
+            alt="Similar Product Name"
+          />
+          <div class="similar-product-info">
+            <p>Jeans</p>
+            <p>$49.99</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="other-products">
+      <div class="other-product-container">
+       <div class="product-1">
+          <a href="shop.html"
+            ><img src="assets/imgs/Men Clothing/00774350407-e1.jpg" alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Classic Elegance">Classic Elegance</p>
+              <p data-product-price="$99.99">$99.99</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-2">
+          <a href="shop.html"
+            ><img src="assets/imgs/Men Clothing/00774350814-e1.jpg" alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Classic Elegance">Classic Elegance</p>
+              <p data-product-price="$99.99">$99.99</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-3">
+          <a href="shop.html"
+            ><img src="assets/imgs/Men Clothing/03920468700-ult28.jpg" alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Classic Elegance">Classic Elegance</p>
+              <p data-product-price="$99.99">$99.99</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-4">
+          <a href="shop.html"
+            ><img src="assets/imgs/Men Clothing/03284325802-e1.jpg" alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Classic Elegance">Classic Elegance</p>
+              <p data-product-price="$99.99">$99.99</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-5">
+          <a href="shop.html"
+            ><img src="assets/imgs/Men Clothing/Sports/training socks.jpg" alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Training Socks">Training Socks</p>
+              <p data-product-price="$99.99">$99.99</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-6">
+          <a href="shop.html"
+            ><img src="assets/imgs/Men Clothing/Sports/04387304251-e1.jpg" alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Training Shorts">Training Shorts</p>
+              <p data-product-price="$99.99">$99.99</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-7">
+          <a href="shop.html"
+            ><img src="assets/imgs/Men Clothing/Sports/05868302700-e1.jpg" alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Gym Singlet">Gym Singlet</p>
+              <p data-product-price="$99.99">$99.99</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-8">
+          <a href="shop.html"
+            ><img src="assets/imgs/Men Clothing/Sports/relaxed fit shirt.jpg" alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Relaxed Fit Shirt">Relaxed Fit Shirt</p>
+              <p data-product-price="$99.99">$99.99</p>
+            </div>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="newsletter">
+        <div></div>
+        <!-- <img src="assets/imgs/Lume couture.png" alt="" /> -->
+        <div class="newsletter-content">
+          <h4>Subscribe to our Newsletter</h4>
+          <p>Stay updated on the latest arrivals and exclusive offers.</p>
+          <form action="#">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="socials">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">Pinterest</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">YouTube</a>
+        <a href="#">TikTok</a>
+        <a href="#">Snapchat</a>
+      </div>
+
+      <table>
+        <tr>
+          <th>HELP</th>
+          <th>FOLLOW</th>
+          <th>COMPANY</th>
+          <th>POLICIES</th>
+        </tr>
+        <tr>
+          <td><a href="#">Customer Support</a></td>
+          <td><a href="#">Instagram</a></td>
+          <td><a href="#">About Us</a></td>
+          <td><a href="#">Privacy Policy</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">FAQ</a></td>
+          <td><a href="#">Twitter</a></td>
+          <td><a href="#">Careers</a></td>
+          <td><a href="#">Terms of Service</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Shipping Information</a></td>
+          <td><a href="#">LinkedIn</a></td>
+          <td><a href="#">Press</a></td>
+          <td><a href="#">Cookie Policy</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Gift Cards</a></td>
+          <td><a href="#">YouTube</a></td>
+          <td><a href="#">Sustainability</a></td>
+          <td><a href="#">Accessibility</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Site Map</a></td>
+          <td><a href="#">TikTok</a></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><a href="#">Pinterest</a></td>
+        </tr>
+      </table>
+      <div class="copyright">
+        <p>&copy; 2023 Lumé Couture. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/shop.js"></script>
+  </body>
+</html>

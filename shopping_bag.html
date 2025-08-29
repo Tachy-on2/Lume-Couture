@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/shopping_bag.css" />
+    <title>Shopping Bag</title>
+  </head>
+  <body>
+    <header>
+      <!-- HAMBURGER ICON -->
+
+      <img src="assets/imgs/Lume Couture Black.png" alt="Lumé Couture Logo" />
+      <img
+        class="hidden"
+        src="assets/imgs/Lume couture.png"
+        alt="Lumé Couture Logo"
+      />
+      <nav>
+        <ul>
+          <li class="active men-toggle">
+            <a href="index.html" onclick="toggleMenMenu()">MEN</a>
+          </li>
+          <li><a href="#" onclick="toggleWomenMenu()">WOMEN</a></li>
+          <li>
+            <a href="#" onclick="toggleElleMenu()">ELLE'S FASHION ROOM</a>
+          </li>
+          <input type="search" placeholder="SEARCH" />
+          <li><a href="login.html">LOGIN</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="shopping_bag.html">SHOPPING BAG</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="layout-shop-footer">
+      <div class="layout">
+        <div id="cart-total">
+          <p>Cart Total: $<span id="total-amount">0.00</span></p>
+        </div>
+        <button onclick="checkout()" id="checkout-button" popovertarget="checkout-info-popover">Checkout</button>
+      </div>
+    </section>
+
+    <main class="top-container">
+      <span><a href="#">Shopping Bag</a></span>
+    </main>
+
+    <div id="cart-items">
+      <!-- Cart items will be displayed here -->
+    </div>
+
+    <!-- <div id="cart-total">
+      <p>Cart Total: $<span id="total-amount">0.00</span></p>
+    </div> -->
+
+    <!-- <div class="cart-controls">
+      <button id="clear-cart">Clear Cart</button>
+    </div> -->
+
+    <h3>You may also like</h3>
+    <section class="other-products">
+      <div class="other-product-container">
+        <div class="product-1">
+          <a href="shop.html"
+            ><img src="assets/imgs/Men Clothing/00774350407-e1.jpg" alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Classic Elegance">Classic Elegance</p>
+              <p data-product-price="$99.99">$99.99</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-2">
+          <a href="shop.html"
+            ><img src="assets/imgs/Men Clothing/00774350814-e1.jpg" alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Classic Elegance">Classic Elegance</p>
+              <p data-product-price="$99.99">$99.99</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-3">
+          <a href="shop.html"
+            ><img src="assets/imgs/Men Clothing/03920468700-ult28.jpg" alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Classic Elegance">Classic Elegance</p>
+              <p data-product-price="$99.99">$99.99</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-4">
+          <a href="shop.html"
+            ><img src="assets/imgs/Men Clothing/03284325802-e1.jpg" alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Classic Elegance">Classic Elegance</p>
+              <p data-product-price="$99.99">$99.99</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-5">
+          <a href="shop.html"
+            ><img
+              src="assets/imgs/Men Clothing/Sports/training socks.jpg"
+              alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Training Socks">Training Socks</p>
+              <p data-product-price="$99.99">$99.99</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-6">
+          <a href="shop.html"
+            ><img
+              src="assets/imgs/Men Clothing/Sports/04387304251-e1.jpg"
+              alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Training Shorts">Training Shorts</p>
+              <p data-product-price="$99.99">$99.99</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-7">
+          <a href="shop.html"
+            ><img
+              src="assets/imgs/Men Clothing/Sports/05868302700-e1.jpg"
+              alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Gym Singlet">Gym Singlet</p>
+              <p data-product-price="$99.99">$99.99</p>
+            </div>
+          </span>
+        </div>
+        <div class="product-8">
+          <a href="shop.html"
+            ><img
+              src="assets/imgs/Men Clothing/Sports/relaxed fit shirt.jpg"
+              alt=""
+          /></a>
+          <span class="product-info">
+            <a href="#" onclick="toggleFavorite(this)"
+              ><img src="assets/imgs/Icons/favorite.png" alt=""
+            /></a>
+            <div>
+              <p data-product-name="Relaxed Fit Shirt">Relaxed Fit Shirt</p>
+              <p data-product-price="$99.99">$99.99</p>
+            </div>
+          </span>
+        </div>
+      </div>
+    </section>
+    <div id="checkout-modal" class="modal" style="display:none;">
+      <div class="modal-content">
+        <span class="close" id="close-modal">&times;</span>
+        <h2>Checkout</h2>
+        <p>Online Checkout and delivery is not available at the moment.</p>
+        <p>Please contact us for more information.</p>
+        <p><a href="tel:+1234567890">Call us</a> or <a href="mailto:info@lume-couture.com">email us</a>.</p>
+        <button id="modal-ok">OK</button>
+      </div>
+    </div>
+    <script src="js/shopping_bag.js"></script>
+  </body>
+</html>
